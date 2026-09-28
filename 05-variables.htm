@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart Quality</title>
+    <title>Cart Quantity</title>
 </head>
 <body>
     <button onclick="
-        console.log('card quality:0');">Show Quantity</button>
-        <button onclick="console.log('Add to cart');">Add to Cart</button>
-        <button onclick="console.log('+2');">+2</button>
-        <button onclick="console.log('+3');">+3</button>
-        <button onclick="console.log('reset it');">Reset Cart</button>
+       document.getElementById('new').innerHTML= 'these are your cart items:' +CartQuality;">Show Quantity</button>
+        <button onclick="CartQuantity = CartQuantity + 1">Add to Cart</button>
+        <button onclick="CartQuantity = CartQuantity + 2">+2</button>
+        <button onclick="CartQuantity = CartQuantity + 3">+3</button>
+        <button onclick="CartQuantity = 0">Reset Cart</button>
+        <p id="new"></p>
         <script>
-            let CartQuality=0;
+            let CartQuantity=0;
         </script>
 </body>
 </html>
